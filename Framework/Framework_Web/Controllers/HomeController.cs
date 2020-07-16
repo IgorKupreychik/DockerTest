@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Framework_ClassLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,8 @@ namespace Framework_Web.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            object model = (new HelloWorld()).Greetings();
+            return View("Index", model);
         }
 
         public ActionResult About()

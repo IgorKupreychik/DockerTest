@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework_Web", "Framework_Web\Framework_Web.csproj", "{66B0F456-393E-4D34-889D-10A2B9B4B707}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core_ClassLib", "Core\Core_ClassLib\Core_ClassLib.csproj", "{CE7CF638-8295-4B6B-BDE9-7CF44E586E05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core_Web", "Core_Web\Core_Web.csproj", "{7C21622E-5308-452D-B69C-5195597D652D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core_Web", "Core\Core_Web\Core_Web.csproj", "{437F5EDF-3909-4CB9-96E5-CBED6BC65AE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core_ClassLib", "Core_ClassLib\Core_ClassLib.csproj", "{34FFCE52-5E6F-4CE3-BBBF-30A9098D112F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DE994AAD-80B1-4B88-8F5E-5ADBC3CA6823}"
+	ProjectSection(SolutionItems) = preProject
+		Core\.dockerignore = Core\.dockerignore
+		Core\Dockerfile = Core\Dockerfile
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework_Web", "Framework\Framework_Web\Framework_Web.csproj", "{2ACC1DC0-8ECB-4732-A0FA-DD0402D89A3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework_ClassLib", "Framework\Framework_ClassLib\Framework_ClassLib.csproj", "{8AB5D773-6543-49A7-903C-BDB118235FE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +23,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{66B0F456-393E-4D34-889D-10A2B9B4B707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66B0F456-393E-4D34-889D-10A2B9B4B707}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66B0F456-393E-4D34-889D-10A2B9B4B707}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66B0F456-393E-4D34-889D-10A2B9B4B707}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C21622E-5308-452D-B69C-5195597D652D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C21622E-5308-452D-B69C-5195597D652D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C21622E-5308-452D-B69C-5195597D652D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C21622E-5308-452D-B69C-5195597D652D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{34FFCE52-5E6F-4CE3-BBBF-30A9098D112F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34FFCE52-5E6F-4CE3-BBBF-30A9098D112F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34FFCE52-5E6F-4CE3-BBBF-30A9098D112F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34FFCE52-5E6F-4CE3-BBBF-30A9098D112F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE7CF638-8295-4B6B-BDE9-7CF44E586E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE7CF638-8295-4B6B-BDE9-7CF44E586E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE7CF638-8295-4B6B-BDE9-7CF44E586E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE7CF638-8295-4B6B-BDE9-7CF44E586E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{437F5EDF-3909-4CB9-96E5-CBED6BC65AE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437F5EDF-3909-4CB9-96E5-CBED6BC65AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437F5EDF-3909-4CB9-96E5-CBED6BC65AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437F5EDF-3909-4CB9-96E5-CBED6BC65AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACC1DC0-8ECB-4732-A0FA-DD0402D89A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACC1DC0-8ECB-4732-A0FA-DD0402D89A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACC1DC0-8ECB-4732-A0FA-DD0402D89A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACC1DC0-8ECB-4732-A0FA-DD0402D89A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AB5D773-6543-49A7-903C-BDB118235FE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB5D773-6543-49A7-903C-BDB118235FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB5D773-6543-49A7-903C-BDB118235FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB5D773-6543-49A7-903C-BDB118235FE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

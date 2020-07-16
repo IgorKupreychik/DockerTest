@@ -6,7 +6,6 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 #COPY ["Core_Web/Core_Web.csproj", "Core_Web/"]
 COPY . Core/
-#COPY . Core_ClassLib/
 
 # Core_ClassLib
 RUN dotnet restore "Core/Core_ClassLib/Core_ClassLib.csproj"
